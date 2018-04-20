@@ -28,8 +28,10 @@ then
 	echo "Incorrect range"
 	exit 1
 fi
-for (( i=$START; i<=$END; i++))
+for i in `seq $START $END`;
 do	
-	DIGIT="$IPADDR" | sed -r 's!/.*!!; s!.*\.!!'
-	echo $DIGIT
+	#IP_FIRSTPART=$(echo $IPADDR | sed 's!/.*!!; s!.*\.!!')
+	IP_WO_LAST_OCTET=$(echo $IPADDR | sed 's/\.[0-9]*$/./')
+	NEWIP="$IP_WO_LAST_OCTET$i"
+	ping -c 1 $NEWIP | tr \\n ' ' | awk '/1 packets received/ {print $2}' ;
 done
