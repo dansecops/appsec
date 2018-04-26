@@ -7,7 +7,6 @@
 
 class SimpleHashTable:
 
-
     element = []
     tableSize = 0
 
@@ -29,7 +28,8 @@ class SimpleHashTable:
                     currentNode = currentNode.childElement
                 else:
                     #what to do here?
-                    currentNode.ChildElement #create a new childElement here
+                    currentNode
+                    ChildElement #create a new childElement here
                     return True
                     break
         raise ValueError("Wrong map balance, too many elements for hash map")
@@ -38,6 +38,8 @@ class SimpleHashTable:
         return element % self.tableSize
 
 class Element:
+
+
     def __init__(self, childElement):
         self.childElement = childElement
 

@@ -33,5 +33,5 @@ do
 	#IP_FIRSTPART=$(echo $IPADDR | sed 's!/.*!!; s!.*\.!!')
 	IP_WO_LAST_OCTET=$(echo $IPADDR | sed 's/\.[0-9]*$/./')
 	NEWIP="$IP_WO_LAST_OCTET$i"
-	ping -c 1 $NEWIP | tr \\n ' ' | awk '/1 packets received/ {print $2}' ;
+		ping -c 1 $NEWIP | tr \\n ' ' | awk '/1 received/ {print $2}' ;
 done
