@@ -1,0 +1,11 @@
+[web]
+host4
+host5
+host6
+
+[lb]
+lb1
+lb2
+
+[all:vars]
+ansible_connection=local
