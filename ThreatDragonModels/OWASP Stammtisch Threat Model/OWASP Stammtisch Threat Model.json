@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "OWASP Stammtisch Threat Model",
+    "owner": "Skjallar",
+    "description": "Threat modeling for online dating app"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Skjallar"
+  }
+}
