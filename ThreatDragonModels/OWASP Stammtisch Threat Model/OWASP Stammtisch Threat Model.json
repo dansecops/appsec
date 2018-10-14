@@ -5,7 +5,11 @@
     "description": "Threat modeling for online dating app"
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Skjallar"
+      }
+    ],
     "diagrams": [
       {
         "title": "Online Dating App",
