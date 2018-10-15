@@ -24,8 +24,8 @@
                 "height": 100
               },
               "position": {
-                "x": 404,
-                "y": 474
+                "x": 322,
+                "y": 469
               },
               "angle": 0,
               "id": "b6bff1f3-ec98-45bc-9a2d-e2a152950447",
@@ -76,8 +76,8 @@
                 "height": 80
               },
               "position": {
-                "x": 384,
-                "y": 83
+                "x": 376,
+                "y": 81
               },
               "angle": 0,
               "id": "e28ab925-d1a5-4efb-b828-af1f0e209f9e",
@@ -102,8 +102,8 @@
                 "height": 100
               },
               "position": {
-                "x": 414,
-                "y": 210
+                "x": 303,
+                "y": 215
               },
               "angle": 0,
               "id": "f8da291e-125b-4a11-86b6-2b090f5540ae",
@@ -128,8 +128,8 @@
                 "height": 80
               },
               "position": {
-                "x": 486,
-                "y": 374
+                "x": 431,
+                "y": 376
               },
               "angle": 0,
               "id": "52f570d4-4714-4944-95fb-72f77888dffd",
@@ -157,7 +157,7 @@
                 "height": 80
               },
               "position": {
-                "x": 660,
+                "x": 611,
                 "y": 377
               },
               "angle": 0,
@@ -183,8 +183,8 @@
                 "height": 80
               },
               "position": {
-                "x": 840,
-                "y": 380
+                "x": 785,
+                "y": 375
               },
               "angle": 0,
               "id": "ab96a224-b354-41fe-a22c-98c116f3abcc",
@@ -209,8 +209,8 @@
                 "height": 80
               },
               "position": {
-                "x": 569,
-                "y": 94
+                "x": 558,
+                "y": 79
               },
               "angle": 0,
               "id": "80da90fa-84cf-4c5e-8782-3c82067cbc87",
@@ -442,8 +442,8 @@
                 "height": 100
               },
               "position": {
-                "x": 621,
-                "y": 210
+                "x": 624,
+                "y": 182
               },
               "angle": 0,
               "id": "6be2d9bd-ffbc-423f-b11b-3598695299e4",
@@ -511,7 +511,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 18",
+                      "text": "Configuration",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -540,8 +540,8 @@
               },
               "vertices": [
                 {
-                  "x": 810,
-                  "y": 353
+                  "x": 816,
+                  "y": 318
                 }
               ],
               "id": "9ab1061e-9d8b-4ec3-9eca-517c058e4c18",
@@ -550,7 +550,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 19",
+                      "text": "Logging and\nMonitoring",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -745,22 +745,6 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 1061,
-                "y": 630
-              },
-              "target": {
-                "x": 1057,
-                "y": 360
-              },
-              "vertices": [],
-              "id": "541ebf48-5dc1-47b0-ad4a-f6b271e06498",
-              "z": 33,
-              "attrs": {}
-            },
-            {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
                 "x": 20,
                 "y": 619
               },
@@ -826,8 +810,8 @@
               },
               "vertices": [
                 {
-                  "x": 717,
-                  "y": 514
+                  "x": 660,
+                  "y": 571
                 }
               ],
               "id": "8bbd2ca3-6c07-4808-8ca8-16b805b62c94",
@@ -865,8 +849,12 @@
               },
               "vertices": [
                 {
-                  "x": 849,
-                  "y": 522
+                  "x": 854,
+                  "y": 550
+                },
+                {
+                  "x": 928,
+                  "y": 501
                 }
               ],
               "id": "28a651e2-ae56-40ab-8c15-8c3f5f2d4974",
