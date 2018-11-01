@@ -901,8 +901,8 @@
                 "height": 80
               },
               "position": {
-                "x": 65,
-                "y": 199
+                "x": 61,
+                "y": 109
               },
               "angle": 0,
               "id": "698323b9-dfaa-4e8c-83b9-89a66e069abd",
@@ -927,8 +927,8 @@
                 "height": 80
               },
               "position": {
-                "x": 64,
-                "y": 321
+                "x": 63,
+                "y": 204
               },
               "angle": 0,
               "id": "cf7a29f3-34e2-42be-a5c7-d6c61e0a379a",
@@ -953,8 +953,8 @@
                 "height": 100
               },
               "position": {
-                "x": 257,
-                "y": 215
+                "x": 258,
+                "y": 207
               },
               "angle": 0,
               "id": "28866786-86ae-4d86-984d-bbf1066b7f38",
@@ -1031,8 +1031,8 @@
                 "height": 100
               },
               "position": {
-                "x": 258,
-                "y": 347
+                "x": 265,
+                "y": 313
               },
               "angle": 0,
               "id": "ba7c28a7-8731-47e2-a5a8-d0877a2cca3c",
@@ -1057,8 +1057,8 @@
                 "height": 80
               },
               "position": {
-                "x": 329,
-                "y": 0
+                "x": 328,
+                "y": 2
               },
               "angle": 0,
               "id": "4f5b4e7c-c637-4b74-9079-e1b8a38a9c31",
@@ -1083,8 +1083,8 @@
                 "height": 80
               },
               "position": {
-                "x": 889,
-                "y": 221
+                "x": 846,
+                "y": 222
               },
               "angle": 0,
               "id": "572ac94f-c896-4813-85ca-d8491cb1955f",
@@ -1162,8 +1162,8 @@
                 "height": 80
               },
               "position": {
-                "x": 266,
-                "y": 103
+                "x": 124,
+                "y": 4
               },
               "angle": 0,
               "id": "cb921e80-43ff-463a-bb6e-7fdf857e2288",
@@ -1188,8 +1188,8 @@
                 "height": 80
               },
               "position": {
-                "x": 217,
-                "y": 490
+                "x": 274,
+                "y": 491
               },
               "angle": 0,
               "id": "380660ff-7e76-417b-80e6-53e325507bc7",
@@ -1368,12 +1368,12 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.9920160437732825,
-                    "offset": -17.061780176125467
+                    "distance": 0.49536998172272295,
+                    "offset": -41.98299678461626
                   },
                   "attrs": {
                     "text": {
-                      "text": "HTTPS",
+                      "text": "HTTPS, XML RPC",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -1395,8 +1395,8 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 379,
-                "y": 530
+                "x": 435,
+                "y": 527
               },
               "target": {
                 "id": "0f1e2651-fe54-4240-ba11-99687c846bd6"
@@ -1481,7 +1481,10 @@
               "id": "521a7bd0-59ab-42ea-8abf-eab659316184",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5294117647058824,
+                    "offset": -22
+                  },
                   "attrs": {
                     "text": {
                       "text": "SQL (JDBC)",
@@ -1624,7 +1627,8 @@
                 "id": "698323b9-dfaa-4e8c-83b9-89a66e069abd"
               },
               "target": {
-                "id": "28866786-86ae-4d86-984d-bbf1066b7f38"
+                "x": 273,
+                "y": 217
               },
               "vertices": [],
               "id": "b729f2b2-42e2-4151-81e5-23bc6a461be9",
@@ -1655,8 +1659,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 358,
-                "y": 379
+                "id": "ba7c28a7-8731-47e2-a5a8-d0877a2cca3c"
               },
               "target": {
                 "x": 506,
@@ -1696,14 +1699,17 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 225,
-                "y": 344
+                "id": "cf7a29f3-34e2-42be-a5c7-d6c61e0a379a"
               },
               "target": {
-                "x": 275,
-                "y": 305
+                "id": "28866786-86ae-4d86-984d-bbf1066b7f38"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 243,
+                  "y": 277
+                }
+              ],
               "id": "3b426842-01cd-46c6-a54f-f06fc4086761",
               "labels": [
                 {
@@ -1735,7 +1741,8 @@
                 "id": "cf7a29f3-34e2-42be-a5c7-d6c61e0a379a"
               },
               "target": {
-                "id": "ba7c28a7-8731-47e2-a5a8-d0877a2cca3c"
+                "x": 271,
+                "y": 341
               },
               "vertices": [],
               "id": "59162bca-3511-4e16-8281-e67358a7a34f",
