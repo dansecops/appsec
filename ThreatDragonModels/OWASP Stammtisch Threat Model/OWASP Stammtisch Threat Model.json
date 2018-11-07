@@ -1331,7 +1331,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "Authentication & \nLogin",
+                      "text": "Payment Processing",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -1558,8 +1558,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.9925885631539659,
-                    "offset": -273.05273537291214
+                    "distance": 0.978706205627337,
+                    "offset": -280.9241424729116
                   },
                   "attrs": {
                     "text": {
